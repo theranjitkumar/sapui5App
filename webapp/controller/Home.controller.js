@@ -11,7 +11,8 @@ sap.ui.define([
 		 * @memberOf ui5demo.sapui5app.view.Home
 		 */
 		onInit: function () {
-
+			var form = this.getView().byId("SimpleForm1");
+			form.bindElement("Model>/Customers('ALFKI')");
 		},
 		goToAbout: function () {
 			new sap.ui.core.UIComponent.getRouterFor(this).navTo("about");

@@ -1,12 +1,26 @@
-<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5demo.sapui5app.controller.Home"
-	xmlns:html="http://www.w3.org/1999/xhtml">
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:f="sap.ui.layout.form" xmlns="sap.m"
+	controllerName="ui5demo.sapui5app.controller.Home" xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
 		<pages>
 			<Page title="Home">
 				<content>
-					<Button text="navigate to About" press="goToAbout"> </Button>
-					<Button text="navigate to Users" press="goToUsers"> </Button>
-					<Button text="navigate to Employee" press="goToEmployee"> </Button>
+					<Button text="navigate to About" press="goToAbout"></Button>
+					<Button text="navigate to Users" press="goToUsers"></Button>
+					<Button text="navigate to Employee" press="goToEmployee"></Button>
+					<f:SimpleForm id="SimpleForm1" editable="true" layout="ResponsiveGridLayout" title="Employee Data">
+						<f:content>
+							<Label text="Customer Id"/>
+							<Input value="{Model>CustomerID}" width="200px"/>
+							<Label text="Company Name"/>
+							<Input value="{Model>CompanyName}" width="200px"/>
+							<Label text="Contact Name"/>
+							<Input value="{Model>ContactName}" width="200px"/>
+							<Label text="Contact Title"/>
+							<Input value="{Model>ContactTitle}" width="200px"/>
+							<Label text="Address"/>
+							<Input value="{Model>Address}" width="200px"/>
+						</f:content>
+					</f:SimpleForm>
 				</content>
 			</Page>
 		</pages>

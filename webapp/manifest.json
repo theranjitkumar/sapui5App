@@ -12,6 +12,15 @@
 		"sourceTemplate": {
 			"id": "ui5template.basicSAPUI5ApplicationProject",
 			"version": "1.40.12"
+		},
+		"dataSources": {
+			"Northwind": {
+				"uri": "/destinations/Northwind/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
 		}
 	},
 	"sap.ui": {
@@ -60,6 +69,12 @@
 			"appData": {
 				"type": "sap.ui.model.json.JSONModel",
 				"uri": "model/appData.json"
+			},
+			"Model": {
+				"dataSource": "Northwind",
+				"settings": {
+					"synchronizationMode": "None"
+				}
 			}
 		},
 		"resources": {

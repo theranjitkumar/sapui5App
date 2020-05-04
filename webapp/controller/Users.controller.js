@@ -18,6 +18,7 @@ sap.ui.define([
 		},
 		getUsers: function () {
 			var aboutView = this.getView();
+			// var url = "https://express-restapi.herokuapp.com/posts";
 			$.get("https://jsonplaceholder.typicode.com/users").then(function (res) {
 				console.log(res);
 				var oModel = new sap.ui.model.json.JSONModel();
