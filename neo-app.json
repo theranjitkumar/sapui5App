@@ -24,13 +24,6 @@
 				"entryPath": "/resources"
 			},
 			"description": "SAPUI5 Resources"
-		}, {
-			"path": "/destinations/Northwind",
-			"target": {
-				"type": "destination",
-				"name": "Northwind"
-			},
-			"description": "Northwind OData services"
 		},
 
 		{
@@ -41,6 +34,13 @@
 				"entryPath": "/test-resources"
 			},
 			"description": "SAPUI5 Test Resources"
+		}, {
+			"path": "/destinations/Northwind",
+			"target": {
+				"type": "destination",
+				"name": "Northwind"
+			},
+			"description": "Northwind OData services"
 		}
 	],
 	"sendWelcomeFileRedirect": true
