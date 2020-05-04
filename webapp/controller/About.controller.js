@@ -13,8 +13,11 @@ sap.ui.define([
 		onInit: function () {
 
 		},
-		backToHome: function() {
-			sap.ui.core.UIComponent.getRouterFor(this).navTo("home");
+		// backToHome: function () {
+		// 	sap.ui.core.UIComponent.getRouterFor(this).navTo("home");
+		// },
+		back: function () {
+			window.history.go(-1);
 		},
 		/**
 		 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

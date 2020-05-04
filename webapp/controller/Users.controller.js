@@ -11,7 +11,10 @@ sap.ui.define([
 		 * @memberOf ui5demo.sapui5app.view.Users
 		 */
 		onInit: function () {
-this.getUsers();
+			this.getUsers();
+		},
+		back: function () {
+			window.history.go(-1);
 		},
 		getUsers: function () {
 			var aboutView = this.getView();

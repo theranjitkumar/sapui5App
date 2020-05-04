@@ -4,7 +4,7 @@
 		<pages id="about">
 			<Page title="About">
 				<content>
-					<Button text="Back to Home" press="backToHome"> </Button>
+					<Button text="Go Back" press="back"> </Button>
 				</content>
 			</Page>
 		</pages>

@@ -4,6 +4,7 @@
 		<pages id="employee">
 			<Page title="Employee">
 				<content>
+					<Button text="Go Back" press="back"> </Button>
 					<List noDataText="Drop list items here" id="list0" items="{appData>/employee}" headerText="Employee Details">
 						<items>
 							<StandardListItem type="Navigation" title="{appData>empName}" description="Id is: {appData>empId}" icon="sap-icon://picture" id="item0"/>
