@@ -4,7 +4,9 @@
 		<pages>
 			<Page title="Home">
 				<content>
-					<Button text="navigate to about" press="gotToAbout"> </Button>
+					<Button text="navigate to About" press="goToAbout"> </Button>
+					<Button text="navigate to Users" press="goToUsers"> </Button>
+					<Button text="navigate to Employee" press="goToEmployee"> </Button>
 				</content>
 			</Page>
 		</pages>

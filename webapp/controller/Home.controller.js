@@ -13,8 +13,14 @@ sap.ui.define([
 		onInit: function () {
 
 		},
-		gotToAbout: function () {
-			sap.ui.core.UIComponent.getRouterFor(this).navTo("about");
+		goToAbout: function () {
+			new sap.ui.core.UIComponent.getRouterFor(this).navTo("about");
+		},
+		goToUsers: function () {
+			new sap.ui.core.UIComponent.getRouterFor(this).navTo("users");
+		},
+		goToEmployee: function () {
+			new sap.ui.core.UIComponent.getRouterFor(this).navTo("employee");
 		},
 		/**
 		 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered

@@ -56,14 +56,16 @@
 				"settings": {
 					"bundleName": "ui5demo.sapui5app.i18n.i18n"
 				}
+			},
+			"appData": {
+				"type": "sap.ui.model.json.JSONModel",
+				"uri": "model/appData.json"
 			}
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			]
+			"css": [{
+				"uri": "css/style.css"
+			}]
 		},
 		"routing": {
 			"config": {
@@ -75,36 +77,31 @@
 				"controlId": "app",
 				"clearControlAggregation": false
 			},
-			"routes": [
-				{
-					"name": "home",
-					"pattern": "",
-					"target": [
-						"Home"
-					]
-				},
-				{
-					"name": "about",
-					"pattern": "about",
-					"target": [
-						"About"
-					]
-				},
-				{
-					"name": "Users",
-					"pattern": "users",
-					"target": [
-						"Users"
-					]
-				},
-				{
-					"name": "Employee",
-					"pattern": "employee",
-					"target": [
-						"Employee"
-					]
-				}
-			],
+			"routes": [{
+				"name": "home",
+				"pattern": "",
+				"target": [
+					"Home"
+				]
+			}, {
+				"name": "about",
+				"pattern": "about",
+				"target": [
+					"About"
+				]
+			}, {
+				"name": "users",
+				"pattern": "users",
+				"target": [
+					"Users"
+				]
+			}, {
+				"name": "employee",
+				"pattern": "employee",
+				"target": [
+					"Employee"
+				]
+			}],
 			"targets": {
 				"Home": {
 					"viewType": "XML",

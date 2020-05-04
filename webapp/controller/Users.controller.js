@@ -11,9 +11,22 @@ sap.ui.define([
 		 * @memberOf ui5demo.sapui5app.view.Users
 		 */
 		onInit: function () {
-
+this.getUsers();
 		},
+		getUsers: function () {
+			var aboutView = this.getView();
+			$.get("https://jsonplaceholder.typicode.com/users").then(function (res) {
+				console.log(res);
+				var oModel = new sap.ui.model.json.JSONModel();
+				oModel.setData({
+					'users': res
+				});
+				// new sap.ui.getCore().setModel(oModel);
+				aboutView.setModel(oModel)
+				console.log(oModel.oData);
 
+			})
+		},
 		/**
 		 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 		 * (NOT before the first rendering! onInit() is used for that one!).

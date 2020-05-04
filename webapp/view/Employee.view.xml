@@ -1,9 +1,15 @@
 <mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="ui5demo.sapui5app.controller.Employee"
 	xmlns:html="http://www.w3.org/1999/xhtml">
 	<App>
-		<pages>
+		<pages id="employee">
 			<Page title="Employee">
-				<content></content>
+				<content>
+					<List noDataText="Drop list items here" id="list0" items="{appData>/employee}" headerText="Employee Details">
+						<items>
+							<StandardListItem type="Navigation" title="{appData>empName}" description="Id is: {appData>empId}" icon="sap-icon://picture" id="item0"/>
+						</items>
+					</List>
+				</content>
 			</Page>
 		</pages>
 	</App>
